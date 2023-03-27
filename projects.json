@@ -1,0 +1,14 @@
+{
+	"interactive-rating-component": {
+		"title": "Interactive Rating Component",
+		"coverImg": "./interactive-rating-component/design/mobile-design.jpg",
+		"description": "This is a nice, small project to practice handling user interactions and updating the DOM. Perfect for anyone who has learned the basics of JavaScript!",
+		"difficulty": "Newbie"
+	},
+	"product-preview-card-component": {
+		"title": "Product Preview Card Component",
+		"coverImg": "./product-preview-card-component/design/mobile-design.jpg",
+		"description": "This HTML & CSS-only challenge will be perfect for anyone starting to build responsive projects.",
+		"difficulty": "Newbie"
+	}
+}

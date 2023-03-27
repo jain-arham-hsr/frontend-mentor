@@ -4,14 +4,47 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
 		<title>Frontend Mentor Submissions</title>
+		<script>
+			window.onload = () => {
+				const container = document.getElementById("card-grid-space");
+				fetch("projects.json")
+					.then((file) => file.text())
+					.then((text) => {
+						let projectData = JSON.parse(text);
+						for (const project in projectData) {
+							if (projectData.hasOwnProperty(project)) {
+								let card = document.createElement("a");
+								card.classList.add("card");
+								card.href = `./${project}/`;
+								card.style.setProperty(
+									"--bg-img",
+									`url('${projectData[project]["coverImg"]}')`
+								);
+								cardContent = document.createElement("div");
+								cardContent.classList.add("card-content");
+								card.appendChild(cardContent);
+								contentHeading = document.createElement("h1");
+								contentHeading.innerHTML = projectData[project]["title"];
+								cardContent.appendChild(contentHeading);
+								contentDesc = document.createElement("p");
+								contentDesc.innerHTML = projectData[project]["description"];
+								cardContent.appendChild(contentDesc);
+								contentDifficulty = document.createElement("span");
+								contentDifficulty.classList.add("difficulty");
+								contentDifficulty.innerHTML =
+									projectData[project]["difficulty"];
+								cardContent.appendChild(contentDifficulty);
+								container.appendChild(card);
+							}
+						}
+					});
+			};
+		</script>
 	</head>
 	<body>
-		<a href="./interactive-rating-component/">
-			Interactive rating component
-		</a>
-		<a href="./product-preview-card-component/">
-			Product preview card component
-		</a>
+		<h1 class="header">Frontend Mentor Projects</h1>
+		<div id="card-grid-space"></div>
 	</body>
 </html>
