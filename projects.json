@@ -13,7 +13,7 @@
 	},
 	"results-summary-component": {
 		"title": "Results Summary Component",
-		"coverImg": "./results-summary-component/design/mobile-design.jpg",
+		"coverImg": "./results-summary-component/design/desktop-design.jpg",
 		"description": "This challenge has something for everyone. It’s a HTML and CSS only project, but we’ve also provided a JSON file of the test results for anyone wanting to practice JS.",
 		"difficulty": "Newbie"
 	}
