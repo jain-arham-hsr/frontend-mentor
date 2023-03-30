@@ -17,10 +17,10 @@
 		"description": "This challenge has something for everyone. It’s a HTML and CSS only project, but we’ve also provided a JSON file of the test results for anyone wanting to practice JS.",
 		"difficulty": "Newbie"
 	},
-	"qr-code-component": {
-		"title": "QR Code Component",
-		"coverImg": "./qr-code-component/design/mobile-design.jpg",
-		"description": "A perfect first challenge if you're new to HTML and CSS. The card layout doesn't shift, so it's ideal if you haven't learned about building responsive layouts yet.",
+	"nft-preview-card-component": {
+		"title": "NFT Preview Card Component",
+		"coverImg": "./nft-preview-card-component/design/mobile-design.jpg",
+		"description": "This HTML & CSS only challenge is perfect for anyone just starting out or anyone wanting a small project to play around with.",
 		"difficulty": "Newbie"
 	}
 }
