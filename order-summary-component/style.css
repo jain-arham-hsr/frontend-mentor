@@ -89,6 +89,13 @@ Components
 .order-modification-link {
 	font-weight: 900;
 	font-size: 0.9rem;
+	color: hsl(245, 75%, 52%);
+	text-decoration: underline;
+}
+
+.order-modification-link:hover {
+	color: hsla(245, 75%, 52%, 68%);
+	cursor: pointer;
 }
 
 .order-summary > button {
@@ -108,9 +115,19 @@ Components
 	box-shadow: hsl(224deg 23% 55% / 35%) 0px 15px 20px;
 }
 
+.continue-btn:hover {
+	background-color: hsla(245, 75%, 52%, 68%);
+	cursor: pointer;
+}
+
 .cancel-btn {
 	background-color: transparent;
 	color: hsl(224, 23%, 55%);
+}
+
+.cancel-btn:hover {
+	color: hsl(223, 47%, 23%);
+	cursor: pointer;
 }
 
 /*
