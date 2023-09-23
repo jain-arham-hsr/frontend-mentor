@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+/*
+============================
+Layout
+============================
+*/
+
+body {
+	margin: 0;
+	background-color: hsl(233, 47%, 7%);
+}
+
+.wrapper {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: hsl(244, 38%, 16%);
+	width: 84%;
+	border-radius: 10px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+/*
+============================
+Components
+============================
+*/
+
+.card-cover {
+	position: relative;
+}
+
+.cover-img {
+	width: 100%;
+}
+.image-overlay {
+	background-color: hsl(277deg 100% 36% / 55%);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.card-contents {
+	padding: 2em;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.card-heading {
+	color: white;
+	font-family: "Inter", sans-serif;
+	font-weight: 700;
+	font-size: 1.6rem;
+	margin: 0;
+}
+
+.card-description {
+	color: hsla(0, 0%, 100%, 0.75);
+	line-height: 1.5rem;
+	font-size: 1.1rem;
+	font-family: "Inter", sans-serif;
+	font-weight: 400;
+}
+
+.stats {
+	list-style: none;
+	padding-left: 0;
+	margin-top: 0.5em;
+	display: flex;
+	flex-direction: column;
+}
+
+.stats li {
+	margin-top: 1.5em;
+}
+
+.stats li .value {
+	color: white;
+	font-family: "Inter", sans-serif;
+	font-weight: 600;
+	font-size: 1.5rem;
+	line-height: 2.5rem;
+}
+
+.stats li .label {
+	color: hsla(0, 0%, 100%, 0.75);
+	text-transform: uppercase;
+	font-family: "Lexend Deca", sans-serif;
+	font-size: 0.9375rem;
+}
+
+/*
+============================
+Viewports
+============================
+*/
+
+@media screen and (min-width: 1062px) {
+	.wrapper {
+		flex-direction: row-reverse;
+	}
+
+	.card-cover {
+		width: 50%;
+	}
+
+	.cover-img {
+		height: 100%;
+		width: auto;
+	}
+
+	.card-contents {
+		text-align: left;
+		padding: 4em;
+	}
+
+	.card-heading {
+		font-size: 2.3rem;
+	}
+
+	.card-description,
+	.stats {
+		width: 80%;
+	}
+
+	.stats {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
